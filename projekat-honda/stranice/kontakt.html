@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt</title>
+    <link rel="icon" type="image/x-icon" href="../resursi/favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html">Početna</a> |
+        <a href="istorija.html">Istorija</a> |
+        <a href="modeli.html">Modeli</a> |
+        <a href="galerija.html">Galerija</a> |
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Kontakt</h1>
+      <form>
+        <fieldset>
+          <legend>Rezervacija probne vožnje</legend>
+
+          <label for="name">Ime i prezime*</label>
+          <input
+            type="text"
+            id="name"
+            name="ime_prezime"
+            required
+            placeholder="Novak Djoković"
+          /><br /><br />
+
+          <label for="email">Email*</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="novakdjokovic@gmail.com"
+          /><br /><br />
+
+          <label for="telefon">Telefon*</label>
+          <input
+            type="tel"
+            id="telefon"
+            name="telefon"
+            required
+            placeholder="065 111 1111"
+          /><br /><br />
+
+          <label for="model">Omiljeni model</label>
+          <select id="model" name="model">
+            <option value="civic">Civic</option>
+            <option value="accord">Accord</option>
+            <option value="crv">CR-V</option>
+            <option value="nsx">NSX</option>
+            <option value="type-r">Type R</option></select
+          ><br /><br />
+
+          <label for="datum">Datum probne vožnje</label>
+          <input type="date" id="datum" name="datum" /><br /><br />
+
+          <label for="osobe">Broj osoba</label>
+          <input
+            type="number"
+            id="osobe"
+            name="broj_osoba"
+            min="1"
+            max="5"
+            required
+            placeholder="1-5"
+          /><br /><br />
+
+          <label>Želite li dodatnu opremu?</label><br />
+          <input type="radio" id="oprema_da" name="oprema" value="da" />
+          <label for="oprema_da">Da</label>
+          <input type="radio" id="oprema_ne" name="oprema" value="ne" />
+          <label for="oprema_ne">Ne</label><br /><br />
+
+          <label for="poruka">Poruka</label><br />
+          <textarea
+            id="poruka"
+            name="poruka"
+            rows="5"
+            cols="40"
+            required
+            placeholder="Sviđa mi se CR-V model..."
+          ></textarea
+          ><br /><br />
+
+          <label for="slika">Dodaj sliku</label>
+          <input
+            type="file"
+            id="slika"
+            name="slika"
+            accept="image/*"
+          /><br /><br />
+
+          <input type="checkbox" id="uslovi" name="uslovi" required />
+          <label for="uslovi">Prihvatam uslove</label><br /><br />
+
+          <button type="submit">Pošalji</button>
+          <button type="reset">Obriši</button>
+        </fieldset>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Honda Fan Sajt – Studentski projekat</p>
+    </footer>
+  </body>
+</html>
