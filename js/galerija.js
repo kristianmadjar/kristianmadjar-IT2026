@@ -46,7 +46,8 @@
     opis.textContent = tekst + " (" + (trenutni + 1) + " / " + linkovi.length + ")";
 
     [trenutni - 1, trenutni + 1].forEach(function (k) {
-      new Image().src = linkovi[(k + linkovi.length) % linkovi.length].href;
+      var unapred = new Image();
+      unapred.src = linkovi[(k + linkovi.length) % linkovi.length].href;
     });
   }
 

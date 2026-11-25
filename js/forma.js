@@ -6,7 +6,7 @@
     return;
   }
 
-  var status = document.getElementById("forma-status");
+  var statusPoruka = document.getElementById("forma-status");
   var MAX_PORUKA = 500;
 
   forma.noValidate = true;
@@ -24,7 +24,7 @@
       if (!v) {
         return "Unesite ime i prezime.";
       }
-      if (!/^[\p{L}][\p{L}'.-]*(\s+[\p{L}][\p{L}'.-]*)+$/u.test(v)) {
+      if (!/^[A-Za-zÀ-ÖØ-öø-ž\u0400-\u04FF][A-Za-zÀ-ÖØ-öø-ž\u0400-\u04FF'.-]*(\s+[A-Za-zÀ-ÖØ-öø-ž\u0400-\u04FF][A-Za-zÀ-ÖØ-öø-ž\u0400-\u04FF'.-]*)+$/.test(v)) {
         return "Unesite ime i prezime (najmanje dve reči, bez brojeva).";
       }
       return "";
@@ -162,8 +162,8 @@
   }
 
   forma.addEventListener("input", function () {
-    if (status) {
-      status.hidden = true;
+    if (statusPoruka) {
+      statusPoruka.hidden = true;
     }
   });
 
@@ -193,10 +193,10 @@
 
     var ime = document.getElementById("name").value.trim().split(/\s+/)[0];
     forma.reset();
-    if (status) {
-      status.textContent = "Hvala, " + ime + "! Forma je ispravno popunjena.";
-      status.hidden = false;
-      status.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    if (statusPoruka) {
+      statusPoruka.textContent = "Hvala, " + ime + "! Forma je ispravno popunjena.";
+      statusPoruka.hidden = false;
+      statusPoruka.scrollIntoView({ behavior: "smooth", block: "nearest" });
     }
   });
 })();
