@@ -1,33 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
   <url>
-    <loc>https://kristianmadjar.github.io/kristianmadjar-IT2026/</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+       <loc>https://kristianmadjar.github.io/kristianmadjar-IT2026/index.html</loc>
+       <lastmod>2026-11-25T18:51:00+00:00</lastmod>
+       <priority>1.0000</priority>
   </url>
   <url>
-    <loc>https://kristianmadjar.github.io/kristianmadjar-IT2026/stranice/istorija.html</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+       <loc>https://kristianmadjar.github.io/kristianmadjar-IT2026/stranice/istorija.html</loc>
+       <lastmod>2026-11-25T18:51:00+00:00</lastmod>
+       <priority>0.8000</priority>
   </url>
   <url>
-    <loc>https://kristianmadjar.github.io/kristianmadjar-IT2026/stranice/modeli.html</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+       <loc>https://kristianmadjar.github.io/kristianmadjar-IT2026/stranice/modeli.html</loc>
+       <lastmod>2026-11-25T18:51:00+00:00</lastmod>
+       <priority>0.8000</priority>
   </url>
   <url>
-    <loc>https://kristianmadjar.github.io/kristianmadjar-IT2026/stranice/galerija.html</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+       <loc>https://kristianmadjar.github.io/kristianmadjar-IT2026/stranice/galerija.html</loc>
+       <lastmod>2026-11-25T18:51:00+00:00</lastmod>
+       <priority>0.8000</priority>
   </url>
   <url>
-    <loc>https://kristianmadjar.github.io/kristianmadjar-IT2026/stranice/kontakt.html</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+       <loc>https://kristianmadjar.github.io/kristianmadjar-IT2026/stranice/kontakt.html</loc>
+       <lastmod>2026-11-25T18:51:00+00:00</lastmod>
+       <priority>0.8000</priority>
   </url>
 </urlset>
