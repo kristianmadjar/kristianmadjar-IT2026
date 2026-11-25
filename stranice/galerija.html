@@ -1,44 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Galerija</title>
-    <link rel="icon" type="image/x-icon" href="../resursi/favicon.ico" />
+    <title>Galerija Honda automobila – Civic, Accord, CR-V, HR-V, ZR-V</title>
+    <meta
+      name="description"
+      content="Galerija slika Honda automobila: Civic, Accord, CR-V, HR-V, ZR-V i NSX. Kliknite na auto koji vam se sviđa da biste ga videli u većoj veličini."
+    />
+    <meta
+      name="keywords"
+      content="honda, automobili, auto, modeli, civic, slike honda automobila"
+    />
+    <meta name="author" content="Kristian Madjar" />
+
+    <link rel="icon" href="../favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/galerija.js" defer></script>
   </head>
   <body>
     <header>
       <nav>
-        <a href="../index.html">Početna</a> |
-        <a href="istorija.html">Istorija</a> |
-        <a href="modeli.html">Modeli</a> |
-        <a href="galerija.html">Galerija</a> |
+        <a href="../index.html">Početna</a>
+        <a href="istorija.html">Istorija</a>
+        <a href="modeli.html">Modeli</a>
+        <a href="galerija.html" aria-current="page">Galerija</a>
         <a href="kontakt.html">Kontakt</a>
       </nav>
     </header>
 
     <main>
-      <h1>Galerija</h1>
-      <p>Klikni na sliku za veću verziju.</p>
-      <a href="../slike/civic.png"
-        ><img src="../slike/civic.png" alt="Slika Civica" width="240"
-      /></a>
-      <a href="../slike/accord.png"
-        ><img src="../slike/accord.png" alt="Slika Accorda" width="240"
-      /></a>
-      <a href="../slike/crv.png"
-        ><img src="../slike/crv.png" alt="Slika CR-V" width="240"
-      /></a>
-      <a href="../slike/nsx.png"
-        ><img src="../slike/nsx.png" alt="Slika NSX" width="240"
-      /></a>
-      <a href="../slike/type-r.png"
-        ><img src="../slike/type-r.png" alt="Slika Type=R" width="240"
-      /></a>
+      <h1>Galerija Honda automobila</h1>
+      <p>
+        Ovde se nalaze slike nekoliko poznatih Honda automobila, od gradskog
+        HR-V i porodičnog CR-V do sportskog NSX. Klikni na sliku za veću
+        verziju, a podatke o svakom modelu pronađi na stranici
+        <a href="modeli.html">Honda modeli</a>.
+      </p>
+      <div class="galerija">
+        <a href="../slike/civic.png"
+          ><img
+            src="../slike/civic.png"
+            alt="Honda Civic – kompaktni hečbek automobil"
+            width="240"
+            height="130"
+        /></a>
+        <a href="../slike/accord.png"
+          ><img
+            src="../slike/accord.png"
+            alt="Honda Accord – limuzina, automobil srednje klase"
+            width="240"
+            height="135"
+        /></a>
+        <a href="../slike/crv.png"
+          ><img
+            src="../slike/crv.png"
+            alt="Honda CR-V – porodični SUV automobil"
+            width="240"
+            height="135"
+        /></a>
+        <a href="../slike/hrv.png"
+          ><img
+            src="../slike/hrv.png"
+            alt="Honda HR-V – gradski SUV auto"
+            width="240"
+            height="158"
+        /></a>
+        <a href="../slike/zrv.png"
+          ><img
+            src="../slike/zrv.png"
+            alt="Honda ZR-V – SUV automobil sportskijeg izgleda"
+            width="240"
+            height="133"
+        /></a>
+        <a href="../slike/nsx.png"
+          ><img
+            src="../slike/nsx.png"
+            alt="Honda NSX – sportski auto"
+            width="240"
+            height="115"
+        /></a>
+      </div>
     </main>
 
     <footer>
-      <p>&copy; 2025 Honda Fan Sajt – Studentski projekat</p>
+      <p>&copy; 2025 Kristian Madjar</p>
     </footer>
   </body>
 </html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kristianmadjar.github.io/kristianmadjar-IT2026/sitemap.xml
