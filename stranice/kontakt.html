@@ -12,6 +12,17 @@
       content="honda, automobili, auto, vožnja, probna vožnja, rezervacija probne vožnje">
     <meta name="author" content="Kristian Madjar">
 
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Honda Fan Sajt">
+    <meta property="og:locale" content="sr_RS">
+    <meta property="og:title" content="Kontakt i probna vožnja Honda automobila">
+    <meta property="og:description" content="Rezervišite probnu vožnju Honda automobila. Izaberite auto koji vas zanima i datum probne vožnje, a ostalo ostavite formi.">
+    <meta property="og:url" content="https://kristianmadjar.github.io/kristianmadjar-IT2026/stranice/kontakt.html">
+    <meta property="og:image" content="https://kristianmadjar.github.io/kristianmadjar-IT2026/slike/og-honda.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Honda CR-V – porodični SUV automobil">
+
     <link rel="icon" href="../favicon/favicon.ico">
     <link
       rel="apple-touch-icon"
@@ -29,8 +40,16 @@
       href="../favicon/favicon-16x16.png">
     <link rel="manifest" href="../favicon/site.webmanifest">
 
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.min.css">
+    <script src="../js/like.js" defer></script>
     <script src="../js/forma.js" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V4ZYGXMGCK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-V4ZYGXMGCK');
+    </script>
   </head>
   <body>
     <header>
@@ -122,7 +141,31 @@
     </main>
 
     <footer>
+      <div class="deljenje">
+        <button type="button" class="like-dugme" aria-pressed="false">
+          <span aria-hidden="true">&#128077;</span>
+          <span class="like-tekst">Like</span>
+        </button>
+        <div
+          class="fb-share-button"
+          data-href="https://kristianmadjar.github.io/kristianmadjar-IT2026/stranice/kontakt.html"
+          data-layout="button"
+          data-size="large">
+          <a
+            class="fb-xfbml-parse-ignore"
+            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkristianmadjar.github.io%2Fkristianmadjar-IT2026%2Fstranice%2Fkontakt.html"
+            target="_blank"
+            rel="noopener">Podeli na Facebook-u</a>
+        </div>
+      </div>
       <p>&copy; 2025 Kristian Madjar</p>
     </footer>
+
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v23.0"></script>
   </body>
 </html>

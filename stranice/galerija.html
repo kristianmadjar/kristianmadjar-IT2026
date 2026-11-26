@@ -12,6 +12,17 @@
       content="honda, automobili, auto, modeli, civic, slike honda automobila">
     <meta name="author" content="Kristian Madjar">
 
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Honda Fan Sajt">
+    <meta property="og:locale" content="sr_RS">
+    <meta property="og:title" content="Galerija Honda automobila – Civic, Accord, CR-V, HR-V, ZR-V">
+    <meta property="og:description" content="Galerija slika Honda automobila: Civic, Accord, CR-V, HR-V, ZR-V i NSX. Kliknite na auto koji vam se sviđa da biste ga videli u većoj veličini.">
+    <meta property="og:url" content="https://kristianmadjar.github.io/kristianmadjar-IT2026/stranice/galerija.html">
+    <meta property="og:image" content="https://kristianmadjar.github.io/kristianmadjar-IT2026/slike/og-honda.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Honda CR-V – porodični SUV automobil">
+
     <link rel="icon" href="../favicon/favicon.ico">
     <link
       rel="apple-touch-icon"
@@ -29,8 +40,16 @@
       href="../favicon/favicon-16x16.png">
     <link rel="manifest" href="../favicon/site.webmanifest">
 
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.min.css">
+    <script src="../js/like.js" defer></script>
     <script src="../js/galerija.js" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V4ZYGXMGCK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-V4ZYGXMGCK');
+    </script>
   </head>
   <body>
     <header>
@@ -52,39 +71,39 @@
         <a href="modeli.html">Honda modeli</a>.
       </p>
       <div class="galerija">
-        <a href="../slike/civic.png"
+        <a href="../slike/civic.webp"
           ><img
-            src="../slike/civic.png"
+            src="../slike/civic.webp"
             alt="Honda Civic – kompaktni hečbek automobil"
             width="240"
             height="130"></a>
-        <a href="../slike/accord.png"
+        <a href="../slike/accord.webp"
           ><img
-            src="../slike/accord.png"
+            src="../slike/accord.webp"
             alt="Honda Accord – limuzina, automobil srednje klase"
             width="240"
             height="135"></a>
-        <a href="../slike/crv.png"
+        <a href="../slike/crv.webp"
           ><img
-            src="../slike/crv.png"
+            src="../slike/crv.webp"
             alt="Honda CR-V – porodični SUV automobil"
             width="240"
             height="135"></a>
-        <a href="../slike/hrv.png"
+        <a href="../slike/hrv.webp"
           ><img
-            src="../slike/hrv.png"
+            src="../slike/hrv.webp"
             alt="Honda HR-V – gradski SUV auto"
             width="240"
             height="158"></a>
-        <a href="../slike/zrv.png"
+        <a href="../slike/zrv.webp"
           ><img
-            src="../slike/zrv.png"
+            src="../slike/zrv.webp"
             alt="Honda ZR-V – SUV automobil sportskijeg izgleda"
             width="240"
             height="133"></a>
-        <a href="../slike/nsx.png"
+        <a href="../slike/nsx.webp"
           ><img
-            src="../slike/nsx.png"
+            src="../slike/nsx.webp"
             alt="Honda NSX – sportski auto"
             width="240"
             height="115"></a>
@@ -92,7 +111,31 @@
     </main>
 
     <footer>
+      <div class="deljenje">
+        <button type="button" class="like-dugme" aria-pressed="false">
+          <span aria-hidden="true">&#128077;</span>
+          <span class="like-tekst">Like</span>
+        </button>
+        <div
+          class="fb-share-button"
+          data-href="https://kristianmadjar.github.io/kristianmadjar-IT2026/stranice/galerija.html"
+          data-layout="button"
+          data-size="large">
+          <a
+            class="fb-xfbml-parse-ignore"
+            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkristianmadjar.github.io%2Fkristianmadjar-IT2026%2Fstranice%2Fgalerija.html"
+            target="_blank"
+            rel="noopener">Podeli na Facebook-u</a>
+        </div>
+      </div>
       <p>&copy; 2025 Kristian Madjar</p>
     </footer>
+
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v23.0"></script>
   </body>
 </html>
